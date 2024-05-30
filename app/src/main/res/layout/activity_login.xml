@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dangNhap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/body2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textColor="@color/text"
+            android:textSize="@dimen/heading2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/body1"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_view"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="@dimen/body3"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Tài khoản"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/body3"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/body1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/body1"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_view"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/unlock"
+                android:drawablePadding="@dimen/body3"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:paddingHorizontal="@dimen/body3"
+                android:paddingVertical="@dimen/body1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/body1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/body2"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingVertical="@dimen/body1"
+            android:text="Đăng nhập"
+            android:textSize="@dimen/body1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/body1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Bạn chưa có tài khoản?"
+                android:textColor="@color/text"
+                android:textSize="@dimen/body1" />
+
+            <TextView
+                android:id="@+id/btnDkDn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="end"
+                android:text="Đăng kí"
+                android:textColor="@color/text"
+                android:textSize="@dimen/body1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

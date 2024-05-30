@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".TrangChuQuanLyChamCong">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý chấm công"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_timKiemChamCong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:background="@color/background"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <EditText
+                android:id="@+id/timKiemChamCong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:hint="Tìm kiếm"
+                android:background="@drawable/background_view"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/maChamCong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Mã chấm công"
+            android:background="@drawable/background_view"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/maNvChamCong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Mã nhân viên"
+            android:background="@drawable/background_view"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/hoTenNvChamCong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Họ và tên"
+            android:background="@drawable/background_view"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/chucVuNvChamCong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Chức vụ"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_view"
+            android:backgroundTint="@color/white"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/soNgayNghi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="5dp"
+            android:hint="Số ngày nghỉ"
+            android:background="@drawable/background_view"
+            android:backgroundTint="@color/white"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/soNgayDiLam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Số ngày đi làm"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_view"
+            android:backgroundTint="@color/white"
+            android:inputType="date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_themChamCong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thêm" />
+
+            <Button
+                android:id="@+id/button_suaChamCong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sửa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_XoaChamCong"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Xóa" />
+
+            <Button
+                android:id="@+id/button_backChamCong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quay lại" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
