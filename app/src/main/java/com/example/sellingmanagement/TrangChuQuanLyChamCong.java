@@ -106,7 +106,7 @@ public class TrangChuQuanLyChamCong extends AppCompatActivity {
             public void onClick(View v) {
                 //kết nối csdl
                 Connection connection= SQLServerHelper.connectionSQLSever();
-                Toast.makeText(TrangChuQuanLyChamCong.this, "Thêm nhân viên thành công", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TrangChuQuanLyChamCong.this, "Thêm chấm công nhân viên thành công", Toast.LENGTH_SHORT).show();
                 try {
                     if(connection!=null){
                         BreakIterator id;

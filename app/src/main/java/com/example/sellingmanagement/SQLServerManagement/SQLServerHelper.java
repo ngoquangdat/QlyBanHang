@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class SQLServerHelper {
-    private static String sql = "jdbc:jtds:sqlserver://192.168.100.13:1433;databasename=BoPhanNhanSu;user=sa;password=0522721509"; // dia chi ket noi
+    private static String sql = "jdbc:jtds:sqlserver://192.168.60.85:1433;databasename=BoPhanNhanSu;user=sa;password=0522721509"; // dia chi ket noi
     public static Connection connectionSQLSever(){
         Connection connection = null;
         try {
